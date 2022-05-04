@@ -1,0 +1,213 @@
+:root {
+/* ### Primary */
+
+--orange: hsl(25, 97%, 53%);
+
+/* ### Neutral */
+
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%, 0.2);
+--dark-blue: hsl(213, 19%, 18%,0.6);
+--very-dark-blue: hsl(216, 12%, 8%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+
+/* Card */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: var(--dark-blue);
+    width: 30%;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+
+
+/* Star Img */
+
+.star-circle {
+    background-color: var(--medium-grey);
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 1.4rem;
+}
+
+/* Text */ 
+
+.big-text {
+    font-size: 2.4rem;
+    color: var(--white);
+    margin-top: 1.9rem;
+}
+
+p {
+    color: var(--light-grey);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* Rating Buttons */
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-btn {
+    color: var(--light-grey);
+    font-size: 1.2rem;
+    background-color: var(--medium-grey);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+
+.rating-btn span {
+    transform: translateY(10%);
+}
+
+.rating-btn:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.rating-btn:hover span {
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+/* Submit Button */
+
+.submit-btn {
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1.1rem;
+    border-radius: 3rem;;
+}
+
+.submit-btn span {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    cursor: pointer;
+
+}
+
+.submit-btn:hover span{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+/* Thank You State */
+
+.thank-you-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-content img {
+    width: 13rem;
+    margin-top: 1rem;
+}
+
+.thank-you-content p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.result {
+    background-color: var(--medium-grey);
+    padding: 0.75rem 1rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
+
+.result div {
+    color: var(--orange);
+    font-size: 1rem;;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Queries */ 
+/* Probably didnt need so many but oh well */
+
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        width: 90%;
+    }
+}
